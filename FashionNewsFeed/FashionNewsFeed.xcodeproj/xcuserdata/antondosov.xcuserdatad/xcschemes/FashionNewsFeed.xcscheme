@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "836250881AC5E39400370340"
-               BuildableName = "FashionNewsFeed.app"
+               BuildableName = "TheGrape.app"
                BlueprintName = "FashionNewsFeed"
                ReferencedContainer = "container:FashionNewsFeed.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "836250881AC5E39400370340"
-            BuildableName = "FashionNewsFeed.app"
+            BuildableName = "TheGrape.app"
             BlueprintName = "FashionNewsFeed"
             ReferencedContainer = "container:FashionNewsFeed.xcodeproj">
          </BuildableReference>
@@ -71,17 +71,25 @@
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
-      allowLocationSimulation = "YES">
+      allowLocationSimulation = "YES"
+      language = "ru"
+      region = "RU">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "836250881AC5E39400370340"
-            BuildableName = "FashionNewsFeed.app"
+            BuildableName = "TheGrape.app"
             BlueprintName = "FashionNewsFeed"
             ReferencedContainer = "container:FashionNewsFeed.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-AppleLanguages (ru)"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -96,7 +104,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "836250881AC5E39400370340"
-            BuildableName = "FashionNewsFeed.app"
+            BuildableName = "TheGrape.app"
             BlueprintName = "FashionNewsFeed"
             ReferencedContainer = "container:FashionNewsFeed.xcodeproj">
          </BuildableReference>
@@ -107,6 +115,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "TheGrape"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

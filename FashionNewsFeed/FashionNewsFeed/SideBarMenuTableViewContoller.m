@@ -8,6 +8,8 @@
 
 #import "SideBarMenuTableViewContoller.h"
 #import "FashionCollectionAPI.h"
+#import "FCTableViewCell1.h"
+#import "MenuTableViewCell.h"
 
 @interface SideBarMenuTableViewContoller ()
 
@@ -18,6 +20,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    
+    //UIImageView* imageView = [[UIImageView alloc] initWithImage:
+     //[UIImage imageNamed:@"menubg.png"]];
+    UIImageView* imageView = [[UIImageView alloc] initWithImage:
+                              [UIImage imageNamed:@"menubg2.png"]];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.clipsToBounds = YES;
+    
+    
+    
+    
+    
+    self.tableView.backgroundView = imageView;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -28,6 +44,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(BOOL)prefersStatusBarHidden{
+  return YES;
 }
 
 #pragma mark - Table view data source
@@ -40,21 +59,82 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
+    //TODO
     // Return the number of rows in the section.
-    return [[[FashionCollectionAPI sharedInstance] getCategories] count];
+    return [[[FashionCollectionAPI sharedInstance] getHardCodedCategories] count] + 2;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0){
+        return 200;
+    } else {
+        return 36;
+    }
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    if (indexPath.row == 0) {
+        
+        UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"menuCellHeader"];
+        //cell.textLabel.text = @"Header";
+        return cell;
+        
+    } else {
     
-    UITableViewCell* cell = (UITableViewCell * )[tableView dequeueReusableCellWithIdentifier: @"menuCell"];
-    cell.textLabel.text = [[[FashionCollectionAPI sharedInstance] getCategories] objectAtIndex:indexPath.row];
+        MenuTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"menuCell"];
+        //TODO
+        
+        if (indexPath.row == 5) {
+            
+            cell.menuTitle.text = @"Информация";
+            cell.menuTitle.font = [UIFont fontWithName:@"ProximaNova-Regular" size:15];
+            
+        } else {
+            cell.menuTitle.text = [[[[FashionCollectionAPI sharedInstance] getHardCodedCategories] objectAtIndex:indexPath.row - 1] categoryName];
+        }
+        
+        return cell;
     
-
+    }
     
-    return cell;
+    
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if(indexPath.row == 0){
+        [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+        return;
+    }
+    if (indexPath.row == 5) {
+        //[self performSegueWithIdentifier:@"showInfo" sender:self];
+        [self performSegueWithIdentifier:@"forteInfo" sender:self];
+        
+    }
+    
+    
+    if([self.revealViewController.frontViewController isKindOfClass:[MainViewController class]]){
+        MainViewController* mvc = (MainViewController*)self.revealViewController.frontViewController;
+        if(indexPath.row - 1 < [[mvc pageTitles] count]){
+        [mvc showPageAtIndex:indexPath.row - 1];
+        }
+    }
+    
+    
+    
+    
+    [self.revealViewController revealToggleAnimated:YES];
+    
+    
+}
+
+
+
+
+
 
 
 /*

@@ -4,16 +4,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface FCFeaturedImage : NSObject
 
-@property (assign, nonatomic) NSUInteger imageId;
-@property (strong, nonatomic) NSString *imageTitle;
-@property (strong, nonatomic) NSString *imageSource;
-@property (strong, nonatomic) NSMutableArray *imageAttachmentMeta;
+@property(assign, nonatomic) NSUInteger imageId;
+@property(strong, nonatomic) NSString *imageTitle;
+@property(strong, nonatomic) NSURL *imageSource;
+@property(assign, nonatomic) NSUInteger imageHeight;
+@property(assign, nonatomic) NSUInteger imageWidth;
 
-- (id)initImageWithId:(NSUInteger)imageId
-             andTitle:(NSString *)imageTitle
-            andAuthor:(NSString *)imageSource
-           andContent:(NSMutableArray *)imageAttachmentMeta;
+- (instancetype)initImageWithId:(NSUInteger)imageId
+                       andTitle:(NSString *)imageTitle
+                      andSource:(NSURL *)imageSource;
+
+- (instancetype)initWithAttributes:(NSDictionary *)attributes;
+
+- (CGFloat)imageAspectRatio;
+
 @end

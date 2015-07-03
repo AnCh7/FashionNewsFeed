@@ -1,10 +1,8 @@
 //
 // Implementation.
-// Downloading the news from web site.
-// http://fcollection.by
+// Downloading posts from web site http://fcollection.by
 //
 
-// Test urls
 // http://fcollection.by/wp-json/
 // /posts/<id>
 // /posts/<id>/revisions
@@ -32,7 +30,7 @@
 
 #import "FCHTTPClient.h"
 
-static NSString * const kFCollectionBaseURLString = @"http://fcollection.by";
+static NSString *const kFCollectionBaseURLString = @"http://fcollection.by/wp-json/";
 
 @implementation FCHTTPClient
 
@@ -41,31 +39,56 @@ static NSString * const kFCollectionBaseURLString = @"http://fcollection.by";
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
         _sharedClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:kFCollectionBaseURLString]];
+        _sharedClient.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+        
+        
+        
+        
     });
     return _sharedClient;
 }
 
 - (instancetype)initWithBaseURL:(NSURL *)url {
-    
     self = [super initWithBaseURL:url];
     if (!self) {
         return nil;
     }
+    AFImageResponseSerializer* noScalingImageSerializer = [AFImageResponseSerializer serializer];
+    noScalingImageSerializer.imageScale = 1.0;
     
-    self.responseSerializer = [AFJSONResponseSerializer serializer];
+    self.responseSerializer = [AFCompoundResponseSerializer compoundSerializerWithResponseSerializers:@[[AFJSONResponseSerializer serializer],noScalingImageSerializer]];
     self.requestSerializer = [AFJSONRequestSerializer serializer];
+    
     return self;
 }
 
-- (void)getLatestPosts:(int)numberOfPosts
-               success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
-               failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure
-{
-    //NSString* path = [NSString stringWithFormat:@"user/calendar/shows.json/%@/%@/%@/%d",
-    //                 kTraktAPIKey, username, dateString, numberOfDays];
+- (void)getImageWithURL:(NSURL*)url
+                success:(void (^)(NSURLSessionDataTask *task, UIImage* responseObject))success
+                failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure{
     
-    NSString* path = [NSString init];
     
+    
+    
+    [self GET:[url absoluteString] parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        UIImage* image = responseObject;
+        
+        success(task,image);
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        failure(task,error);
+    }];
+    
+    
+    
+    
+}
+
+- (void)getCategories:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+              failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
+
+    NSString *path = [NSString stringWithFormat:@"%@%@", kFCollectionBaseURLString, @"taxonomies/category/terms"];
+
     [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         if (success) {
             success(task, responseObject);
@@ -75,19 +98,82 @@ static NSString * const kFCollectionBaseURLString = @"http://fcollection.by";
             failure(task, error);
         }
     }];
-    
-    
-// How to call
-//    FCHTTPClient *client = [FCHTTPClient sharedClient];
-//    
-//    [client getLatestPosts:10
-//                   success:^(NSURLSessionDataTask *task, id responseObject) {
-//                       NSLog(@"Success -- %@", responseObject);
-//                    }
-//                   failure:^(NSURLSessionDataTask *task, NSError *error) {
-//                       NSLog(@"Failure -- %@", error);
-//                    }];
-    
 }
 
+- (void)getPostById:(NSUInteger)postId
+            success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+            failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
+
+    NSString *path = [NSString stringWithFormat:@"%@posts/%lu", kFCollectionBaseURLString, (unsigned long) postId];
+
+    [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        if (success) {
+            success(task, responseObject);
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if (failure) {
+            failure(task, error);
+        }
+    }];
+}
+
+- (void)getPostsByCategory:(NSString *)categoryName
+             andPageNumber:(NSUInteger)pageNumber
+           andPostsPerPage:(NSUInteger)postsPerPage
+                   success:(void (^)(NSURLSessionDataTask *task, id responseObject, NSDictionary *headers))success
+                   failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
+
+    NSString *path = [NSString stringWithFormat:@"%@posts?filter[category_name]=%@&page=%lu&filter[posts_per_page]=%lu&status=publish&count=true",
+                                                kFCollectionBaseURLString,
+                                                categoryName,
+                                                (unsigned long) pageNumber,
+                                                (unsigned long) postsPerPage];
+
+    [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        if (success) {
+            // handle response headers
+            NSHTTPURLResponse *response = ((NSHTTPURLResponse *) [task response]);
+            NSDictionary *headers = [response allHeaderFields];
+            success(task, responseObject, headers);
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if (failure) {
+            failure(task, error);
+        }
+    }];
+}
+
+- (void)getPostsNoCategory:(NSUInteger)pageNumber
+           andPostsPerPage:(NSUInteger)postsPerPage
+                   success:(void (^)(NSURLSessionDataTask *task, id responseObject, NSDictionary *headers))success
+                   failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
+
+    NSString *path = [NSString stringWithFormat:@"%@posts?page=%lu&filter[posts_per_page]=%lu&status=publish&count=true",
+                                                kFCollectionBaseURLString,
+                                                (unsigned long) pageNumber,
+                                                (unsigned long) postsPerPage];
+
+    [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        if (success) {
+            // handle response headers
+            NSHTTPURLResponse *response = ((NSHTTPURLResponse *) [task response]);
+            NSDictionary *headers = [response allHeaderFields];
+            success(task, responseObject, headers);
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if (failure) {
+            failure(task, error);
+        }
+    }];
+}
+
+-(void)cancelAllOperations{
+    
+    
+    for (NSURLSessionTask *task in self.tasks) {
+        [task cancel];
+    }
+    
+    
+}
 @end

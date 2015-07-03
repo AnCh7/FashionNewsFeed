@@ -2,32 +2,36 @@
 //  PersistencyManager.h
 //  FashionNewsFeed
 //
-//  Created by Anton Dosov on 01.04.15.
-//  Copyright (c) 2015 Anton Dosov. All rights reserved.
-//
-
-/*
- Caсhe logic
- CoreData
-*/
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "FCPost.h"
+#import "FCAuthor.h"
+#import "FCTerms.h"
+#import "FCCategory.h"
+#import "FCPostTag.h"
 
 @interface PersistencyManager : NSObject
 
-@property (strong, nonatomic) NSArray * categoriesList;
-@property (strong, nonatomic) NSMutableArray *arrayOfPost;
+//Core Data manager
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-//This methods added to MutableArray inf in current post
+//Get from Core Data
+- (UIImage *)getImageForUrl:(NSURL *)request;
+- (FCPost *)getPostById:(NSUInteger)postId;
+- (NSArray *)getAllPosts;
+- (NSArray *)getPostsByCategory:(NSString *)category;
+- (NSUInteger)getPostCountByCategory:(NSString *)category;
 
-- (BOOL)addCategory:(NSString *)category;
-- (void)addTag:(NSString *)tag;
-- (void)addAttachment:(id) attachment;
+//Set to Core Data
+- (void)cacheImage:(UIImage *)image forURL:(NSURL*)url;
+- (void)setToDataPosts:(NSArray *)post;
+- (void)addPostToQueue:(FCPost *)post;
 
-//This methods get inf from current post
-
-- (NSArray *)getCurrentPostCategories;
-- (NSArray *)getCurrentPostTags;
-- (id)getCurrentPostAttachments;
+//Other
+- (void)deleteAllObjects;
 
 @end

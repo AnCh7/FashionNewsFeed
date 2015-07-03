@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2512751AEEE6A50070A6DA /* FCResponseHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2512741AEEE6A50070A6DA /* FCResponseHeaders.m */; };
+		2A6514A81ADF1F490046BA76 /* FashionCollectionAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6514A71ADF1F490046BA76 /* FashionCollectionAPITests.m */; };
 		2A88DA6A1AD32328007A618C /* FCAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A88DA691AD32328007A618C /* FCAuthor.m */; };
 		2A88DA6D1AD32352007A618C /* FCFeaturedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A88DA6C1AD32352007A618C /* FCFeaturedImage.m */; };
-		2A88DA701AD3237B007A618C /* FCAttachmentMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A88DA6F1AD3237B007A618C /* FCAttachmentMeta.m */; };
 		2A88DA731AD32393007A618C /* FCTerms.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A88DA721AD32393007A618C /* FCTerms.m */; };
 		2A88DA761AD323B7007A618C /* FCPostTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A88DA751AD323B7007A618C /* FCPostTag.m */; };
-		2AEE7E571ACC893800A53CD3 /* FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE7E561ACC893800A53CD3 /* FCCategory.m */; };
+		2AA8A5431AD5C70600530047 /* FCHTTPClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA8A5421AD5C70600530047 /* FCHTTPClientTests.m */; };
+		2AF330C81AD91E5E00E1CB68 /* ExampleContent in Sources */ = {isa = PBXBuildFile; fileRef = 2AF330C71AD91E5E00E1CB68 /* ExampleContent */; };
+		2AFD71731AD46B3300DA1FA2 /* FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD71711AD46B3300DA1FA2 /* FCCategory.m */; };
+		2AFD71741AD46B3300DA1FA2 /* FCPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD71721AD46B3300DA1FA2 /* FCPost.m */; };
+		2DC1528C74FAD05729FC89AA /* NSStringHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1541EA6895D441435FF89 /* NSStringHTML.m */; };
+		2DC157CDB7A10163F1476296 /* NSStringHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1541EA6895D441435FF89 /* NSStringHTML.m */; };
+		2DC159D202C8CAC677EFFD1D /* GTMNSStringHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC15A0C70A934F1AD8A2637 /* GTMNSStringHTML.m */; };
+		2DC15CD3732A1939372B52A6 /* GTMNSStringHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC15A0C70A934F1AD8A2637 /* GTMNSStringHTML.m */; };
+		34B828F12837BAB923F3D16B /* libPods-FashionNewsFeedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDD1CC86E81D5154F3E3DAF /* libPods-FashionNewsFeedTests.a */; };
+		831680411B1913E9005B3866 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 831680401B1913E9005B3866 /* RKDropdownAlert.m */; };
+		831680441B1983CB005B3866 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831680431B1983CB005B3866 /* InformationViewController.m */; };
+		832922801AEBB57600FE6761 /* FCTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8329227F1AEBB57600FE6761 /* FCTableViewCell2.m */; };
 		832B3A8A1ACA918B00D34619 /* SideBarMenuTableViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 832B3A891ACA918B00D34619 /* SideBarMenuTableViewContoller.m */; };
 		832B3A8D1ACA922900D34619 /* NewsContentContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 832B3A8C1ACA922900D34619 /* NewsContentContoller.m */; };
+		835147451B0246CE007D4F51 /* MarkdownImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 835147441B0246CE007D4F51 /* MarkdownImage.m */; };
 		8362508F1AC5E39400370340 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8362508E1AC5E39400370340 /* main.m */; };
 		836250921AC5E39400370340 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 836250911AC5E39400370340 /* AppDelegate.m */; };
 		836250951AC5E39400370340 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836250941AC5E39400370340 /* MainViewController.m */; };
@@ -22,13 +35,57 @@
 		8362509A1AC5E39400370340 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836250991AC5E39400370340 /* Images.xcassets */; };
 		8362509D1AC5E39400370340 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8362509B1AC5E39400370340 /* LaunchScreen.xib */; };
 		836250A91AC5E39400370340 /* FashionNewsFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 836250A81AC5E39400370340 /* FashionNewsFeedTests.m */; };
-		836250B41AC5E4A200370340 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836250B31AC5E4A200370340 /* PageContentViewController.m */; };
+		836B8A091AE4CC6A002A37D2 /* newsFeaturedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B8A081AE4CC6A002A37D2 /* newsFeaturedImageView.m */; };
+		836B8A0B1AE94048002A37D2 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B8A0A1AE94048002A37D2 /* PageContentViewController.m */; };
+		8373409F1AEFD5C1006A2B72 /* FCTableViewCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = 8373409E1AEFD5C1006A2B72 /* FCTableViewCell3.m */; };
+		838A21261AF2697700BDC838 /* FCTableViewCell4.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A21251AF2697700BDC838 /* FCTableViewCell4.m */; };
+		838A21281AF32DCE00BDC838 /* FCTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A21271AF32DCE00BDC838 /* FCTableViewCell1.m */; };
 		838A28C71ACBE48A004F3298 /* FashionCollectionAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A28C61ACBE48A004F3298 /* FashionCollectionAPI.m */; };
 		838A28CA1ACBE4AD004F3298 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A28C91ACBE4AD004F3298 /* PersistencyManager.m */; };
 		838A28CD1ACBE4C4004F3298 /* FCHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A28CC1ACBE4C4004F3298 /* FCHTTPClient.m */; };
-		838A28D31ACBE58D004F3298 /* FCPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A28D11ACBE58D004F3298 /* FCPost.m */; };
+		838AE6141B0B1E6400EF0E17 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE6131B0B1E6400EF0E17 /* MenuTableViewCell.m */; };
+		83A416721B1B176F009ED8FB /* ImageTransformUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A416711B1B176F009ED8FB /* ImageTransformUtility.m */; };
 		83AC6B831AC7E186001544A6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AC6B821AC7E186001544A6 /* SWRevealViewController.m */; };
+		83B795E21AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795D41AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Black Italic.otf */; };
+		83B795E31AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795D51AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Black.otf */; };
+		83B795E41AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795D61AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Bold Italic.otf */; };
+		83B795E51AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795D71AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Bold.otf */; };
+		83B795E61AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Extrabold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795D81AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Extrabold Italic.otf */; };
+		83B795E71AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795D91AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Extrabold.otf */; };
+		83B795E81AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795DA1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Light Italic.otf */; };
+		83B795E91AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795DB1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Light.otf */; };
+		83B795EA1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795DC1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Regular Italic.otf */; };
+		83B795EB1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795DD1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Regular.otf */; };
+		83B795EC1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Semibold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795DE1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Semibold Italic.otf */; };
+		83B795ED1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795DF1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Semibold.otf */; };
+		83B795EE1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795E01AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Thin Italic.otf */; };
+		83B795EF1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795E11AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Thin.otf */; };
+		83B795FC1AFD0A3C00EFDB33 /* PlayfairDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795F01AFD0A3C00EFDB33 /* PlayfairDisplay-Black.ttf */; };
+		83B795FD1AFD0A3C00EFDB33 /* PlayfairDisplay-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795F11AFD0A3C00EFDB33 /* PlayfairDisplay-BlackItalic.ttf */; };
+		83B795FE1AFD0A3C00EFDB33 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795F21AFD0A3C00EFDB33 /* PlayfairDisplay-Bold.ttf */; };
+		83B795FF1AFD0A3C00EFDB33 /* PlayfairDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795F31AFD0A3C00EFDB33 /* PlayfairDisplay-BoldItalic.ttf */; };
+		83B796001AFD0A3C00EFDB33 /* PlayfairDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795F41AFD0A3C00EFDB33 /* PlayfairDisplay-Italic.ttf */; };
+		83B796011AFD0A3C00EFDB33 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795F51AFD0A3C00EFDB33 /* PlayfairDisplay-Regular.ttf */; };
+		83B796021AFD0A3C00EFDB33 /* PlayfairDisplaySC-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795F61AFD0A3C00EFDB33 /* PlayfairDisplaySC-Black.ttf */; };
+		83B796031AFD0A3C00EFDB33 /* PlayfairDisplaySC-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795F71AFD0A3C00EFDB33 /* PlayfairDisplaySC-BlackItalic.ttf */; };
+		83B796041AFD0A3C00EFDB33 /* PlayfairDisplaySC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795F81AFD0A3C00EFDB33 /* PlayfairDisplaySC-Bold.ttf */; };
+		83B796051AFD0A3C00EFDB33 /* PlayfairDisplaySC-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795F91AFD0A3C00EFDB33 /* PlayfairDisplaySC-BoldItalic.ttf */; };
+		83B796061AFD0A3C00EFDB33 /* PlayfairDisplaySC-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795FA1AFD0A3C00EFDB33 /* PlayfairDisplaySC-Italic.ttf */; };
+		83B796071AFD0A3C00EFDB33 /* PlayfairDisplaySC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B795FB1AFD0A3C00EFDB33 /* PlayfairDisplaySC-Regular.ttf */; };
+		83C2B5A31AFBFD97009B1E08 /* ArticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C2B5A21AFBFD97009B1E08 /* ArticleView.m */; };
+		83C2B5A61AFC0573009B1E08 /* MarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C2B5A51AFC0573009B1E08 /* MarkdownParser.m */; };
+		83E5F15D1B1D69F300706E38 /* ForteInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E5F15C1B1D69F300706E38 /* ForteInfo.xib */; };
+		83E5F1601B1D700F00706E38 /* ForteInfoViewContollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E5F15F1B1D700F00706E38 /* ForteInfoViewContollerViewController.m */; };
+		83F4B3601ACEE6B60055E865 /* NavigationBarWithBottomStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F4B35F1ACEE6B60055E865 /* NavigationBarWithBottomStroke.m */; };
 		8505FBD5CEFF5EE843A393DD /* libPods-FashionNewsFeed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 771DCDCF14237555CD2ADE17 /* libPods-FashionNewsFeed.a */; };
+		868C1E181AD85F4700AEEBFF /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 868C1E161AD85F4700AEEBFF /* coreData.xcdatamodeld */; };
+		86AF5CEB1B10982A0019C6E6 /* DataPostTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AF5CEA1B10982A0019C6E6 /* DataPostTag.m */; };
+		86AF5CEE1B10982B0019C6E6 /* DataCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AF5CED1B10982B0019C6E6 /* DataCategory.m */; };
+		86AF5CF11B10982B0019C6E6 /* DataTerms.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AF5CF01B10982B0019C6E6 /* DataTerms.m */; };
+		86AF5CF41B10982B0019C6E6 /* DataFeaturedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AF5CF31B10982B0019C6E6 /* DataFeaturedImage.m */; };
+		86AF5CF71B10982B0019C6E6 /* DataAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AF5CF61B10982B0019C6E6 /* DataAuthor.m */; };
+		86AF5CFA1B10982B0019C6E6 /* DataImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AF5CF91B10982B0019C6E6 /* DataImage.m */; };
+		86AF5CFD1B10982C0019C6E6 /* DataPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AF5CFC1B10982C0019C6E6 /* DataPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,25 +100,43 @@
 
 /* Begin PBXFileReference section */
 		11172E0DC9B8ACB18D45F871 /* Pods-FashionNewsFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionNewsFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionNewsFeed/Pods-FashionNewsFeed.release.xcconfig"; sourceTree = "<group>"; };
+		135EB12A5DDD5B6DE7B3FE5A /* Pods-FashionNewsFeedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionNewsFeedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionNewsFeedTests/Pods-FashionNewsFeedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A2512731AEEE6A50070A6DA /* FCResponseHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCResponseHeaders.h; path = Model/FCResponseHeaders.h; sourceTree = "<group>"; };
+		2A2512741AEEE6A50070A6DA /* FCResponseHeaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCResponseHeaders.m; path = Model/FCResponseHeaders.m; sourceTree = "<group>"; };
+		2A6514A71ADF1F490046BA76 /* FashionCollectionAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionCollectionAPITests.m; sourceTree = "<group>"; };
 		2A88DA681AD32328007A618C /* FCAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCAuthor.h; path = Model/FCAuthor.h; sourceTree = "<group>"; };
 		2A88DA691AD32328007A618C /* FCAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCAuthor.m; path = Model/FCAuthor.m; sourceTree = "<group>"; };
 		2A88DA6B1AD32352007A618C /* FCFeaturedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCFeaturedImage.h; path = Model/FCFeaturedImage.h; sourceTree = "<group>"; };
 		2A88DA6C1AD32352007A618C /* FCFeaturedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCFeaturedImage.m; path = Model/FCFeaturedImage.m; sourceTree = "<group>"; };
-		2A88DA6E1AD3237B007A618C /* FCAttachmentMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCAttachmentMeta.h; path = Model/FCAttachmentMeta.h; sourceTree = "<group>"; };
-		2A88DA6F1AD3237B007A618C /* FCAttachmentMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCAttachmentMeta.m; path = Model/FCAttachmentMeta.m; sourceTree = "<group>"; };
 		2A88DA711AD32393007A618C /* FCTerms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCTerms.h; path = Model/FCTerms.h; sourceTree = "<group>"; };
 		2A88DA721AD32393007A618C /* FCTerms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCTerms.m; path = Model/FCTerms.m; sourceTree = "<group>"; };
 		2A88DA741AD323B7007A618C /* FCPostTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCPostTag.h; path = Model/FCPostTag.h; sourceTree = "<group>"; };
 		2A88DA751AD323B7007A618C /* FCPostTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCPostTag.m; path = Model/FCPostTag.m; sourceTree = "<group>"; };
-		2AEE7E561ACC893800A53CD3 /* FCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCategory.m; sourceTree = "<group>"; };
-		2AEE7E591ACC8A5700A53CD3 /* FCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCategory.h; sourceTree = "<group>"; };
+		2AA8A5421AD5C70600530047 /* FCHTTPClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCHTTPClientTests.m; sourceTree = "<group>"; };
+		2AF330C71AD91E5E00E1CB68 /* ExampleContent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ExampleContent; sourceTree = "<group>"; };
+		2AFD716F1AD46B3300DA1FA2 /* FCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCCategory.h; path = Model/FCCategory.h; sourceTree = "<group>"; };
+		2AFD71701AD46B3300DA1FA2 /* FCPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCPost.h; path = Model/FCPost.h; sourceTree = "<group>"; };
+		2AFD71711AD46B3300DA1FA2 /* FCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCCategory.m; path = Model/FCCategory.m; sourceTree = "<group>"; };
+		2AFD71721AD46B3300DA1FA2 /* FCPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCPost.m; path = Model/FCPost.m; sourceTree = "<group>"; };
+		2DC1541EA6895D441435FF89 /* NSStringHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringHTML.m; sourceTree = "<group>"; };
+		2DC156DC67B8E450442B8F10 /* GTMNSStringHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMNSStringHTML.h; sourceTree = "<group>"; };
+		2DC1593D34D80AFA3BB27731 /* NSStringHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringHTML.h; sourceTree = "<group>"; };
+		2DC15A0C70A934F1AD8A2637 /* GTMNSStringHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMNSStringHTML.m; sourceTree = "<group>"; };
 		771DCDCF14237555CD2ADE17 /* libPods-FashionNewsFeed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FashionNewsFeed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1612489324A6B0BE012158 /* Pods-FashionNewsFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionNewsFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionNewsFeed/Pods-FashionNewsFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		8316803F1B1913E9005B3866 /* RKDropdownAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDropdownAlert.h; sourceTree = "<group>"; };
+		831680401B1913E9005B3866 /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
+		831680421B1983CB005B3866 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
+		831680431B1983CB005B3866 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		8329227E1AEBB57600FE6761 /* FCTableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCTableViewCell2.h; sourceTree = "<group>"; };
+		8329227F1AEBB57600FE6761 /* FCTableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCTableViewCell2.m; sourceTree = "<group>"; };
 		832B3A881ACA918B00D34619 /* SideBarMenuTableViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarMenuTableViewContoller.h; sourceTree = "<group>"; };
 		832B3A891ACA918B00D34619 /* SideBarMenuTableViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarMenuTableViewContoller.m; sourceTree = "<group>"; };
 		832B3A8B1ACA922900D34619 /* NewsContentContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsContentContoller.h; sourceTree = "<group>"; };
 		832B3A8C1ACA922900D34619 /* NewsContentContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsContentContoller.m; sourceTree = "<group>"; };
-		836250891AC5E39400370340 /* FashionNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		835147431B0246CE007D4F51 /* MarkdownImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownImage.h; sourceTree = "<group>"; };
+		835147441B0246CE007D4F51 /* MarkdownImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownImage.m; sourceTree = "<group>"; };
+		836250891AC5E39400370340 /* TheGrape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGrape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8362508D1AC5E39400370340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8362508E1AC5E39400370340 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		836250901AC5E39400370340 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,17 +150,81 @@
 		836250A71AC5E39400370340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836250A81AC5E39400370340 /* FashionNewsFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FashionNewsFeedTests.m; sourceTree = "<group>"; };
 		836250B21AC5E4A200370340 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
-		836250B31AC5E4A200370340 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		836B8A071AE4CC6A002A37D2 /* newsFeaturedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newsFeaturedImageView.h; sourceTree = "<group>"; };
+		836B8A081AE4CC6A002A37D2 /* newsFeaturedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newsFeaturedImageView.m; sourceTree = "<group>"; };
+		836B8A0A1AE94048002A37D2 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		8373409D1AEFD5C1006A2B72 /* FCTableViewCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCTableViewCell3.h; sourceTree = "<group>"; };
+		8373409E1AEFD5C1006A2B72 /* FCTableViewCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCTableViewCell3.m; sourceTree = "<group>"; };
+		838A21221AF1319700BDC838 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		838A21231AF1319700BDC838 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		838A21241AF2697700BDC838 /* FCTableViewCell4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCTableViewCell4.h; sourceTree = "<group>"; };
+		838A21251AF2697700BDC838 /* FCTableViewCell4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCTableViewCell4.m; sourceTree = "<group>"; };
+		838A21271AF32DCE00BDC838 /* FCTableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCTableViewCell1.m; path = View/FCTableViewCell1.m; sourceTree = "<group>"; };
 		838A28C51ACBE48A004F3298 /* FashionCollectionAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionCollectionAPI.h; sourceTree = "<group>"; };
 		838A28C61ACBE48A004F3298 /* FashionCollectionAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionCollectionAPI.m; sourceTree = "<group>"; };
 		838A28C81ACBE4AD004F3298 /* PersistencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistencyManager.h; sourceTree = "<group>"; };
 		838A28C91ACBE4AD004F3298 /* PersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
 		838A28CB1ACBE4C4004F3298 /* FCHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCHTTPClient.h; sourceTree = "<group>"; };
 		838A28CC1ACBE4C4004F3298 /* FCHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCHTTPClient.m; sourceTree = "<group>"; };
-		838A28D01ACBE58D004F3298 /* FCPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPost.h; sourceTree = "<group>"; };
-		838A28D11ACBE58D004F3298 /* FCPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPost.m; sourceTree = "<group>"; };
+		838AE6121B0B1E6400EF0E17 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		838AE6131B0B1E6400EF0E17 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		83A416701B1B176F009ED8FB /* ImageTransformUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransformUtility.h; sourceTree = "<group>"; };
+		83A416711B1B176F009ED8FB /* ImageTransformUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransformUtility.m; sourceTree = "<group>"; };
 		83AC6B811AC7E186001544A6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		83AC6B821AC7E186001544A6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		83B795D41AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Black Italic.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Black Italic.otf"; sourceTree = "<group>"; };
+		83B795D51AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Black.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Black.otf"; sourceTree = "<group>"; };
+		83B795D61AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Bold Italic.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Bold Italic.otf"; sourceTree = "<group>"; };
+		83B795D71AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Bold.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Bold.otf"; sourceTree = "<group>"; };
+		83B795D81AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Extrabold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Extrabold Italic.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Extrabold Italic.otf"; sourceTree = "<group>"; };
+		83B795D91AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Extrabold.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Extrabold.otf"; sourceTree = "<group>"; };
+		83B795DA1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Light Italic.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Light Italic.otf"; sourceTree = "<group>"; };
+		83B795DB1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Light.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Light.otf"; sourceTree = "<group>"; };
+		83B795DC1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Regular Italic.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Regular Italic.otf"; sourceTree = "<group>"; };
+		83B795DD1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Regular.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Regular.otf"; sourceTree = "<group>"; };
+		83B795DE1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Semibold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Semibold Italic.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Semibold Italic.otf"; sourceTree = "<group>"; };
+		83B795DF1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Semibold.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Semibold.otf"; sourceTree = "<group>"; };
+		83B795E01AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Thin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Thin Italic.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Thin Italic.otf"; sourceTree = "<group>"; };
+		83B795E11AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Thin.otf"; path = "fonts/ProximaNova/Mark Simonson - Proxima Nova Thin.otf"; sourceTree = "<group>"; };
+		83B795F01AFD0A3C00EFDB33 /* PlayfairDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Black.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf"; sourceTree = "<group>"; };
+		83B795F11AFD0A3C00EFDB33 /* PlayfairDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-BlackItalic.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		83B795F21AFD0A3C00EFDB33 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Bold.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		83B795F31AFD0A3C00EFDB33 /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-BoldItalic.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		83B795F41AFD0A3C00EFDB33 /* PlayfairDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Italic.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		83B795F51AFD0A3C00EFDB33 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Regular.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		83B795F61AFD0A3C00EFDB33 /* PlayfairDisplaySC-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplaySC-Black.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplaySC-Black.ttf"; sourceTree = "<group>"; };
+		83B795F71AFD0A3C00EFDB33 /* PlayfairDisplaySC-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplaySC-BlackItalic.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplaySC-BlackItalic.ttf"; sourceTree = "<group>"; };
+		83B795F81AFD0A3C00EFDB33 /* PlayfairDisplaySC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplaySC-Bold.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplaySC-Bold.ttf"; sourceTree = "<group>"; };
+		83B795F91AFD0A3C00EFDB33 /* PlayfairDisplaySC-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplaySC-BoldItalic.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplaySC-BoldItalic.ttf"; sourceTree = "<group>"; };
+		83B795FA1AFD0A3C00EFDB33 /* PlayfairDisplaySC-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplaySC-Italic.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplaySC-Italic.ttf"; sourceTree = "<group>"; };
+		83B795FB1AFD0A3C00EFDB33 /* PlayfairDisplaySC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplaySC-Regular.ttf"; path = "fonts/PlayfairDisplay/PlayfairDisplaySC-Regular.ttf"; sourceTree = "<group>"; };
+		83C2B5A11AFBFD97009B1E08 /* ArticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleView.h; sourceTree = "<group>"; };
+		83C2B5A21AFBFD97009B1E08 /* ArticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleView.m; sourceTree = "<group>"; };
+		83C2B5A41AFC0573009B1E08 /* MarkdownParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownParser.h; sourceTree = "<group>"; };
+		83C2B5A51AFC0573009B1E08 /* MarkdownParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownParser.m; sourceTree = "<group>"; };
+		83E5F15C1B1D69F300706E38 /* ForteInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForteInfo.xib; sourceTree = "<group>"; };
+		83E5F15E1B1D700F00706E38 /* ForteInfoViewContollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForteInfoViewContollerViewController.h; sourceTree = "<group>"; };
+		83E5F15F1B1D700F00706E38 /* ForteInfoViewContollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForteInfoViewContollerViewController.m; sourceTree = "<group>"; };
+		83F4B35E1ACEE6B60055E865 /* NavigationBarWithBottomStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarWithBottomStroke.h; sourceTree = "<group>"; };
+		83F4B35F1ACEE6B60055E865 /* NavigationBarWithBottomStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarWithBottomStroke.m; sourceTree = "<group>"; };
+		866336C21AD85C02003CE4DC /* FCTableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCTableViewCell1.h; path = View/FCTableViewCell1.h; sourceTree = "<group>"; };
+		868C1E171AD85F4700AEEBFF /* coreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreData.xcdatamodel; sourceTree = "<group>"; };
+		86AF5CE91B10982A0019C6E6 /* DataPostTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataPostTag.h; path = Data/DataPostTag.h; sourceTree = "<group>"; };
+		86AF5CEA1B10982A0019C6E6 /* DataPostTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataPostTag.m; path = Data/DataPostTag.m; sourceTree = "<group>"; };
+		86AF5CEC1B10982B0019C6E6 /* DataCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataCategory.h; path = Data/DataCategory.h; sourceTree = "<group>"; };
+		86AF5CED1B10982B0019C6E6 /* DataCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataCategory.m; path = Data/DataCategory.m; sourceTree = "<group>"; };
+		86AF5CEF1B10982B0019C6E6 /* DataTerms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataTerms.h; path = Data/DataTerms.h; sourceTree = "<group>"; };
+		86AF5CF01B10982B0019C6E6 /* DataTerms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataTerms.m; path = Data/DataTerms.m; sourceTree = "<group>"; };
+		86AF5CF21B10982B0019C6E6 /* DataFeaturedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataFeaturedImage.h; path = Data/DataFeaturedImage.h; sourceTree = "<group>"; };
+		86AF5CF31B10982B0019C6E6 /* DataFeaturedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataFeaturedImage.m; path = Data/DataFeaturedImage.m; sourceTree = "<group>"; };
+		86AF5CF51B10982B0019C6E6 /* DataAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataAuthor.h; path = Data/DataAuthor.h; sourceTree = "<group>"; };
+		86AF5CF61B10982B0019C6E6 /* DataAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataAuthor.m; path = Data/DataAuthor.m; sourceTree = "<group>"; };
+		86AF5CF81B10982B0019C6E6 /* DataImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataImage.h; path = Data/DataImage.h; sourceTree = "<group>"; };
+		86AF5CF91B10982B0019C6E6 /* DataImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataImage.m; path = Data/DataImage.m; sourceTree = "<group>"; };
+		86AF5CFB1B10982C0019C6E6 /* DataPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataPost.h; path = Data/DataPost.h; sourceTree = "<group>"; };
+		86AF5CFC1B10982C0019C6E6 /* DataPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataPost.m; path = Data/DataPost.m; sourceTree = "<group>"; };
+		9FDD1CC86E81D5154F3E3DAF /* libPods-FashionNewsFeedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FashionNewsFeedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A805F0CB9ED6D9B769622224 /* Pods-FashionNewsFeedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionNewsFeedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionNewsFeedTests/Pods-FashionNewsFeedTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +240,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B828F12837BAB923F3D16B /* libPods-FashionNewsFeedTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DC1567E48CA00FDF9190B37 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2DC1593D34D80AFA3BB27731 /* NSStringHTML.h */,
+				2DC1541EA6895D441435FF89 /* NSStringHTML.m */,
+				2DC156DC67B8E450442B8F10 /* GTMNSStringHTML.h */,
+				2DC15A0C70A934F1AD8A2637 /* GTMNSStringHTML.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		831008DC1ACADC6900270301 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,11 +277,13 @@
 				836250931AC5E39400370340 /* MainViewController.h */,
 				836250941AC5E39400370340 /* MainViewController.m */,
 				836250B21AC5E4A200370340 /* PageContentViewController.h */,
-				836250B31AC5E4A200370340 /* PageContentViewController.m */,
+				836B8A0A1AE94048002A37D2 /* PageContentViewController.m */,
 				832B3A881ACA918B00D34619 /* SideBarMenuTableViewContoller.h */,
 				832B3A891ACA918B00D34619 /* SideBarMenuTableViewContoller.m */,
 				832B3A8B1ACA922900D34619 /* NewsContentContoller.h */,
 				832B3A8C1ACA922900D34619 /* NewsContentContoller.m */,
+				831680421B1983CB005B3866 /* InformationViewController.h */,
+				831680431B1983CB005B3866 /* InformationViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -138,6 +291,22 @@
 		831008DE1ACADC7700270301 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83F4B35E1ACEE6B60055E865 /* NavigationBarWithBottomStroke.h */,
+				83F4B35F1ACEE6B60055E865 /* NavigationBarWithBottomStroke.m */,
+				866336C21AD85C02003CE4DC /* FCTableViewCell1.h */,
+				838A21271AF32DCE00BDC838 /* FCTableViewCell1.m */,
+				836B8A071AE4CC6A002A37D2 /* newsFeaturedImageView.h */,
+				836B8A081AE4CC6A002A37D2 /* newsFeaturedImageView.m */,
+				8329227E1AEBB57600FE6761 /* FCTableViewCell2.h */,
+				8329227F1AEBB57600FE6761 /* FCTableViewCell2.m */,
+				8373409D1AEFD5C1006A2B72 /* FCTableViewCell3.h */,
+				8373409E1AEFD5C1006A2B72 /* FCTableViewCell3.m */,
+				838A21241AF2697700BDC838 /* FCTableViewCell4.h */,
+				838A21251AF2697700BDC838 /* FCTableViewCell4.m */,
+				83C2B5A11AFBFD97009B1E08 /* ArticleView.h */,
+				83C2B5A21AFBFD97009B1E08 /* ArticleView.m */,
+				838AE6121B0B1E6400EF0E17 /* MenuTableViewCell.h */,
+				838AE6131B0B1E6400EF0E17 /* MenuTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -145,22 +314,42 @@
 		831008DF1ACADC7A00270301 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				838A28D01ACBE58D004F3298 /* FCPost.h */,
-				838A28D11ACBE58D004F3298 /* FCPost.m */,
-				2AEE7E591ACC8A5700A53CD3 /* FCCategory.h */,
-				2AEE7E561ACC893800A53CD3 /* FCCategory.m */,
+				2AFD716F1AD46B3300DA1FA2 /* FCCategory.h */,
+				2AFD71711AD46B3300DA1FA2 /* FCCategory.m */,
+				2AFD71701AD46B3300DA1FA2 /* FCPost.h */,
+				2AFD71721AD46B3300DA1FA2 /* FCPost.m */,
 				2A88DA681AD32328007A618C /* FCAuthor.h */,
 				2A88DA691AD32328007A618C /* FCAuthor.m */,
 				2A88DA6B1AD32352007A618C /* FCFeaturedImage.h */,
 				2A88DA6C1AD32352007A618C /* FCFeaturedImage.m */,
-				2A88DA6E1AD3237B007A618C /* FCAttachmentMeta.h */,
-				2A88DA6F1AD3237B007A618C /* FCAttachmentMeta.m */,
 				2A88DA711AD32393007A618C /* FCTerms.h */,
 				2A88DA721AD32393007A618C /* FCTerms.m */,
 				2A88DA741AD323B7007A618C /* FCPostTag.h */,
 				2A88DA751AD323B7007A618C /* FCPostTag.m */,
+				2A2512731AEEE6A50070A6DA /* FCResponseHeaders.h */,
+				2A2512741AEEE6A50070A6DA /* FCResponseHeaders.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		8316803B1B191392005B3866 /* DropdownAlert */ = {
+			isa = PBXGroup;
+			children = (
+				8316803F1B1913E9005B3866 /* RKDropdownAlert.h */,
+				831680401B1913E9005B3866 /* RKDropdownAlert.m */,
+			);
+			name = DropdownAlert;
+			sourceTree = "<group>";
+		};
+		835147421B024659007D4F51 /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+				83C2B5A41AFC0573009B1E08 /* MarkdownParser.h */,
+				83C2B5A51AFC0573009B1E08 /* MarkdownParser.m */,
+				835147431B0246CE007D4F51 /* MarkdownImage.h */,
+				835147441B0246CE007D4F51 /* MarkdownImage.m */,
+			);
+			name = Markdown;
 			sourceTree = "<group>";
 		};
 		836250801AC5E39400370340 = {
@@ -177,7 +366,7 @@
 		8362508A1AC5E39400370340 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				836250891AC5E39400370340 /* FashionNewsFeed.app */,
+				836250891AC5E39400370340 /* TheGrape.app */,
 				836250A21AC5E39400370340 /* FashionNewsFeedTests.xctest */,
 			);
 			name = Products;
@@ -191,7 +380,11 @@
 				831008DE1ACADC7700270301 /* View */,
 				831008DD1ACADC7000270301 /* Controller */,
 				831008DC1ACADC6900270301 /* API */,
+				86628BB21ADB0C4600B56E0C /* CoreData */,
+				836250901AC5E39400370340 /* AppDelegate.h */,
+				836250911AC5E39400370340 /* AppDelegate.m */,
 				8362508C1AC5E39400370340 /* Supporting Files */,
+				2DC1567E48CA00FDF9190B37 /* Helpers */,
 			);
 			path = FashionNewsFeed;
 			sourceTree = "<group>";
@@ -199,13 +392,17 @@
 		8362508C1AC5E39400370340 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83E5F1611B1D701C00706E38 /* ForteAdd */,
+				8316803B1B191392005B3866 /* DropdownAlert */,
+				835147421B024659007D4F51 /* Markdown */,
+				83BFF22D1AFA9C2D0077C3E1 /* fonts */,
 				83AC6B801AC7E186001544A6 /* SWRevealViewController */,
 				8362509B1AC5E39400370340 /* LaunchScreen.xib */,
 				836250991AC5E39400370340 /* Images.xcassets */,
-				836250901AC5E39400370340 /* AppDelegate.h */,
-				836250911AC5E39400370340 /* AppDelegate.m */,
 				8362508D1AC5E39400370340 /* Info.plist */,
 				8362508E1AC5E39400370340 /* main.m */,
+				83A416701B1B176F009ED8FB /* ImageTransformUtility.h */,
+				83A416711B1B176F009ED8FB /* ImageTransformUtility.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -214,6 +411,8 @@
 			isa = PBXGroup;
 			children = (
 				836250A81AC5E39400370340 /* FashionNewsFeedTests.m */,
+				2AA8A5421AD5C70600530047 /* FCHTTPClientTests.m */,
+				2A6514A71ADF1F490046BA76 /* FashionCollectionAPITests.m */,
 				836250A61AC5E39400370340 /* Supporting Files */,
 			);
 			path = FashionNewsFeedTests;
@@ -236,11 +435,94 @@
 			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
+		83BFF22D1AFA9C2D0077C3E1 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				83BFF24B1AFAA5DD0077C3E1 /* Playfare */,
+				83BFF22E1AFA9C3B0077C3E1 /* Proxima */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		83BFF22E1AFA9C3B0077C3E1 /* Proxima */ = {
+			isa = PBXGroup;
+			children = (
+				83B795D41AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Black Italic.otf */,
+				83B795D51AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Black.otf */,
+				83B795D61AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Bold Italic.otf */,
+				83B795D71AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Bold.otf */,
+				83B795D81AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Extrabold Italic.otf */,
+				83B795D91AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Extrabold.otf */,
+				83B795DA1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Light Italic.otf */,
+				83B795DB1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Light.otf */,
+				83B795DC1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Regular Italic.otf */,
+				83B795DD1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Regular.otf */,
+				83B795DE1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Semibold Italic.otf */,
+				83B795DF1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Semibold.otf */,
+				83B795E01AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Thin Italic.otf */,
+				83B795E11AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Thin.otf */,
+			);
+			name = Proxima;
+			sourceTree = "<group>";
+		};
+		83BFF24B1AFAA5DD0077C3E1 /* Playfare */ = {
+			isa = PBXGroup;
+			children = (
+				83B795F01AFD0A3C00EFDB33 /* PlayfairDisplay-Black.ttf */,
+				83B795F11AFD0A3C00EFDB33 /* PlayfairDisplay-BlackItalic.ttf */,
+				83B795F21AFD0A3C00EFDB33 /* PlayfairDisplay-Bold.ttf */,
+				83B795F31AFD0A3C00EFDB33 /* PlayfairDisplay-BoldItalic.ttf */,
+				83B795F41AFD0A3C00EFDB33 /* PlayfairDisplay-Italic.ttf */,
+				83B795F51AFD0A3C00EFDB33 /* PlayfairDisplay-Regular.ttf */,
+				83B795F61AFD0A3C00EFDB33 /* PlayfairDisplaySC-Black.ttf */,
+				83B795F71AFD0A3C00EFDB33 /* PlayfairDisplaySC-BlackItalic.ttf */,
+				83B795F81AFD0A3C00EFDB33 /* PlayfairDisplaySC-Bold.ttf */,
+				83B795F91AFD0A3C00EFDB33 /* PlayfairDisplaySC-BoldItalic.ttf */,
+				83B795FA1AFD0A3C00EFDB33 /* PlayfairDisplaySC-Italic.ttf */,
+				83B795FB1AFD0A3C00EFDB33 /* PlayfairDisplaySC-Regular.ttf */,
+			);
+			name = Playfare;
+			sourceTree = "<group>";
+		};
+		83E5F1611B1D701C00706E38 /* ForteAdd */ = {
+			isa = PBXGroup;
+			children = (
+				83E5F15C1B1D69F300706E38 /* ForteInfo.xib */,
+				83E5F15E1B1D700F00706E38 /* ForteInfoViewContollerViewController.h */,
+				83E5F15F1B1D700F00706E38 /* ForteInfoViewContollerViewController.m */,
+			);
+			name = ForteAdd;
+			sourceTree = "<group>";
+		};
+		86628BB21ADB0C4600B56E0C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				868C1E161AD85F4700AEEBFF /* coreData.xcdatamodeld */,
+				86AF5CE91B10982A0019C6E6 /* DataPostTag.h */,
+				86AF5CEA1B10982A0019C6E6 /* DataPostTag.m */,
+				86AF5CEC1B10982B0019C6E6 /* DataCategory.h */,
+				86AF5CED1B10982B0019C6E6 /* DataCategory.m */,
+				86AF5CEF1B10982B0019C6E6 /* DataTerms.h */,
+				86AF5CF01B10982B0019C6E6 /* DataTerms.m */,
+				86AF5CF51B10982B0019C6E6 /* DataAuthor.h */,
+				86AF5CF61B10982B0019C6E6 /* DataAuthor.m */,
+				86AF5CF81B10982B0019C6E6 /* DataImage.h */,
+				86AF5CF91B10982B0019C6E6 /* DataImage.m */,
+				86AF5CFB1B10982C0019C6E6 /* DataPost.h */,
+				86AF5CFC1B10982C0019C6E6 /* DataPost.m */,
+				86AF5CF21B10982B0019C6E6 /* DataFeaturedImage.h */,
+				86AF5CF31B10982B0019C6E6 /* DataFeaturedImage.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		BB9F83F7CD4947F62BD8A65C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				7F1612489324A6B0BE012158 /* Pods-FashionNewsFeed.debug.xcconfig */,
 				11172E0DC9B8ACB18D45F871 /* Pods-FashionNewsFeed.release.xcconfig */,
+				135EB12A5DDD5B6DE7B3FE5A /* Pods-FashionNewsFeedTests.debug.xcconfig */,
+				A805F0CB9ED6D9B769622224 /* Pods-FashionNewsFeedTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -249,6 +531,7 @@
 			isa = PBXGroup;
 			children = (
 				771DCDCF14237555CD2ADE17 /* libPods-FashionNewsFeed.a */,
+				9FDD1CC86E81D5154F3E3DAF /* libPods-FashionNewsFeedTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -272,16 +555,18 @@
 			);
 			name = FashionNewsFeed;
 			productName = FashionNewsFeed;
-			productReference = 836250891AC5E39400370340 /* FashionNewsFeed.app */;
+			productReference = 836250891AC5E39400370340 /* TheGrape.app */;
 			productType = "com.apple.product-type.application";
 		};
 		836250A11AC5E39400370340 /* FashionNewsFeedTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 836250AF1AC5E39400370340 /* Build configuration list for PBXNativeTarget "FashionNewsFeedTests" */;
 			buildPhases = (
+				CF3738E3C3D3A960AA1F91A9 /* Check Pods Manifest.lock */,
 				8362509E1AC5E39400370340 /* Sources */,
 				8362509F1AC5E39400370340 /* Frameworks */,
 				836250A01AC5E39400370340 /* Resources */,
+				0A8920FEE7911ED7E834DDC4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,9 +620,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B795EB1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Regular.otf in Resources */,
+				83B795ED1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Semibold.otf in Resources */,
 				836250981AC5E39400370340 /* Main.storyboard in Resources */,
+				83B796071AFD0A3C00EFDB33 /* PlayfairDisplaySC-Regular.ttf in Resources */,
+				83B796001AFD0A3C00EFDB33 /* PlayfairDisplay-Italic.ttf in Resources */,
+				83B795EF1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Thin.otf in Resources */,
+				83B796021AFD0A3C00EFDB33 /* PlayfairDisplaySC-Black.ttf in Resources */,
+				83B796041AFD0A3C00EFDB33 /* PlayfairDisplaySC-Bold.ttf in Resources */,
+				83B795E31AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Black.otf in Resources */,
+				83B795E81AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Light Italic.otf in Resources */,
+				83B795E41AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Bold Italic.otf in Resources */,
+				83B796031AFD0A3C00EFDB33 /* PlayfairDisplaySC-BlackItalic.ttf in Resources */,
+				83B795EA1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Regular Italic.otf in Resources */,
+				83B795FE1AFD0A3C00EFDB33 /* PlayfairDisplay-Bold.ttf in Resources */,
+				83B796051AFD0A3C00EFDB33 /* PlayfairDisplaySC-BoldItalic.ttf in Resources */,
+				83B795E71AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Extrabold.otf in Resources */,
+				83B795E21AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Black Italic.otf in Resources */,
 				8362509D1AC5E39400370340 /* LaunchScreen.xib in Resources */,
+				83B795E61AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Extrabold Italic.otf in Resources */,
+				83B795FF1AFD0A3C00EFDB33 /* PlayfairDisplay-BoldItalic.ttf in Resources */,
+				83B795FD1AFD0A3C00EFDB33 /* PlayfairDisplay-BlackItalic.ttf in Resources */,
+				83B796011AFD0A3C00EFDB33 /* PlayfairDisplay-Regular.ttf in Resources */,
+				83E5F15D1B1D69F300706E38 /* ForteInfo.xib in Resources */,
+				83B795EC1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Semibold Italic.otf in Resources */,
+				83B795E51AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Bold.otf in Resources */,
+				83B795E91AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Light.otf in Resources */,
+				83B795EE1AFD0A2800EFDB33 /* Mark Simonson - Proxima Nova Thin Italic.otf in Resources */,
 				8362509A1AC5E39400370340 /* Images.xcassets in Resources */,
+				83B795FC1AFD0A3C00EFDB33 /* PlayfairDisplay-Black.ttf in Resources */,
+				83B796061AFD0A3C00EFDB33 /* PlayfairDisplaySC-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +663,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A8920FEE7911ED7E834DDC4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FashionNewsFeedTests/Pods-FashionNewsFeedTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF3738E3C3D3A960AA1F91A9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		DF226C9AF1346A8EFB4F53D3 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,22 +731,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A88DA6D1AD32352007A618C /* FCFeaturedImage.m in Sources */,
-				836250B41AC5E4A200370340 /* PageContentViewController.m in Sources */,
-				838A28D31ACBE58D004F3298 /* FCPost.m in Sources */,
-				2AEE7E571ACC893800A53CD3 /* FCCategory.m in Sources */,
+				83E5F1601B1D700F00706E38 /* ForteInfoViewContollerViewController.m in Sources */,
 				836250951AC5E39400370340 /* MainViewController.m in Sources */,
+				83A416721B1B176F009ED8FB /* ImageTransformUtility.m in Sources */,
+				86AF5CF71B10982B0019C6E6 /* DataAuthor.m in Sources */,
 				2A88DA761AD323B7007A618C /* FCPostTag.m in Sources */,
+				8373409F1AEFD5C1006A2B72 /* FCTableViewCell3.m in Sources */,
 				838A28CA1ACBE4AD004F3298 /* PersistencyManager.m in Sources */,
+				2AFD71731AD46B3300DA1FA2 /* FCCategory.m in Sources */,
+				838AE6141B0B1E6400EF0E17 /* MenuTableViewCell.m in Sources */,
+				838A21281AF32DCE00BDC838 /* FCTableViewCell1.m in Sources */,
+				836B8A0B1AE94048002A37D2 /* PageContentViewController.m in Sources */,
+				2A2512751AEEE6A50070A6DA /* FCResponseHeaders.m in Sources */,
+				2AF330C81AD91E5E00E1CB68 /* ExampleContent in Sources */,
+				838A21261AF2697700BDC838 /* FCTableViewCell4.m in Sources */,
+				86AF5CF11B10982B0019C6E6 /* DataTerms.m in Sources */,
 				832B3A8A1ACA918B00D34619 /* SideBarMenuTableViewContoller.m in Sources */,
+				86AF5CEB1B10982A0019C6E6 /* DataPostTag.m in Sources */,
+				835147451B0246CE007D4F51 /* MarkdownImage.m in Sources */,
 				838A28C71ACBE48A004F3298 /* FashionCollectionAPI.m in Sources */,
 				2A88DA731AD32393007A618C /* FCTerms.m in Sources */,
 				83AC6B831AC7E186001544A6 /* SWRevealViewController.m in Sources */,
+				831680411B1913E9005B3866 /* RKDropdownAlert.m in Sources */,
+				836B8A091AE4CC6A002A37D2 /* newsFeaturedImageView.m in Sources */,
 				832B3A8D1ACA922900D34619 /* NewsContentContoller.m in Sources */,
+				83C2B5A61AFC0573009B1E08 /* MarkdownParser.m in Sources */,
+				86AF5CFD1B10982C0019C6E6 /* DataPost.m in Sources */,
+				832922801AEBB57600FE6761 /* FCTableViewCell2.m in Sources */,
+				83F4B3601ACEE6B60055E865 /* NavigationBarWithBottomStroke.m in Sources */,
+				86AF5CEE1B10982B0019C6E6 /* DataCategory.m in Sources */,
+				83C2B5A31AFBFD97009B1E08 /* ArticleView.m in Sources */,
 				836250921AC5E39400370340 /* AppDelegate.m in Sources */,
 				838A28CD1ACBE4C4004F3298 /* FCHTTPClient.m in Sources */,
 				8362508F1AC5E39400370340 /* main.m in Sources */,
 				2A88DA6A1AD32328007A618C /* FCAuthor.m in Sources */,
-				2A88DA701AD3237B007A618C /* FCAttachmentMeta.m in Sources */,
+				2AFD71741AD46B3300DA1FA2 /* FCPost.m in Sources */,
+				86AF5CF41B10982B0019C6E6 /* DataFeaturedImage.m in Sources */,
+				831680441B1983CB005B3866 /* InformationViewController.m in Sources */,
+				868C1E181AD85F4700AEEBFF /* coreData.xcdatamodeld in Sources */,
+				86AF5CFA1B10982B0019C6E6 /* DataImage.m in Sources */,
+				2DC157CDB7A10163F1476296 /* NSStringHTML.m in Sources */,
+				2DC159D202C8CAC677EFFD1D /* GTMNSStringHTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +780,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				836250A91AC5E39400370340 /* FashionNewsFeedTests.m in Sources */,
+				2AA8A5431AD5C70600530047 /* FCHTTPClientTests.m in Sources */,
+				2A6514A81ADF1F490046BA76 /* FashionCollectionAPITests.m in Sources */,
+				2DC1528C74FAD05729FC89AA /* NSStringHTML.m in Sources */,
+				2DC15CD3732A1939372B52A6 /* GTMNSStringHTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +802,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				836250971AC5E39400370340 /* Base */,
+				838A21221AF1319700BDC838 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -439,6 +811,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8362509C1AC5E39400370340 /* Base */,
+				838A21231AF1319700BDC838 /* ru */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -463,6 +836,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anton Dosov (C6TTKFZKQX)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -480,8 +854,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				MY_PARAM = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -504,6 +879,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anton Dosov (C6TTKFZKQX)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -515,8 +891,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MY_PARAM = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -527,9 +904,12 @@
 			baseConfigurationReference = 7F1612489324A6B0BE012158 /* Pods-FashionNewsFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FashionNewsFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TheGrape;
 			};
 			name = Debug;
 		};
@@ -538,14 +918,18 @@
 			baseConfigurationReference = 11172E0DC9B8ACB18D45F871 /* Pods-FashionNewsFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: eTest IT, Inc (WG58VW2S68)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: eTest IT, Inc (WG58VW2S68)";
 				INFOPLIST_FILE = FashionNewsFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TheGrape;
 			};
 			name = Release;
 		};
 		836250B01AC5E39400370340 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135EB12A5DDD5B6DE7B3FE5A /* Pods-FashionNewsFeedTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -565,6 +949,7 @@
 		};
 		836250B11AC5E39400370340 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A805F0CB9ED6D9B769622224 /* Pods-FashionNewsFeedTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -609,6 +994,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		868C1E161AD85F4700AEEBFF /* coreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				868C1E171AD85F4700AEEBFF /* coreData.xcdatamodel */,
+			);
+			currentVersion = 868C1E171AD85F4700AEEBFF /* coreData.xcdatamodel */;
+			name = coreData.xcdatamodeld;
+			path = Data/coreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 836250811AC5E39400370340 /* Project object */;
 }

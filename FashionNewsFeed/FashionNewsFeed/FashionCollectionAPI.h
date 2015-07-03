@@ -2,24 +2,39 @@
 //  FashionCollectionAPI.h
 //  FashionNewsFeed
 //
-//  Created by Anton Dosov on 01.04.15.
-//  Copyright (c) 2015 Anton Dosov. All rights reserved.
-//
-
-// Connetction point between all UI and Network-Storage
-
 
 #import <Foundation/Foundation.h>
 #import "FCPost.h"
+#import "FCResponseHeaders.h"
 
 @interface FashionCollectionAPI : NSObject
 
 + (FashionCollectionAPI *)sharedInstance;
 
-- (void)addNewsItem:(FCPost *)newsItem;
-- (NSArray *)getCategories;
-- (FCPost *)getNewsItemWithId:(NSUInteger)id;
+@property (nonatomic,assign) BOOL isNetwork;
 
-//- (void)saveNews;
+#pragma mark - Core Data
+
+- (NSUInteger)getDataPostCountByCategory:(NSString *)category;
+- (NSArray *)getDataPostsByCategory:(NSUInteger)category;
+
+
+#pragma mark - Network
+
+-(void)getImageWithUrl:(NSURL*)url
+               success:(void(^)(NSURLSessionDataTask* task, UIImage* image))success
+               failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
+
+-(void)getPostsForPageCategory:(NSUInteger)pageCategory
+                    pageNumber:(NSUInteger)pageNumber
+                  postsPerPage:(NSUInteger)postsPerPage
+                       success:(void (^)(NSURLSessionDataTask *task, NSMutableArray *posts, FCResponseHeaders *headers))success
+                       failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
+
+- (NSArray *)getHardCodedCategories;
+
+- (void)cancelAllOperations;
 
 @end
+
+

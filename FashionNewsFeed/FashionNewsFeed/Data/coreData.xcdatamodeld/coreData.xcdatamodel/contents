@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DataAuthor" representedClassName="DataAuthor" syncable="YES">
+        <attribute name="authorFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="authorLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorNickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorRegistered" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="authorUserName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DataPost" inverseName="author" inverseEntity="DataPost" syncable="YES"/>
+    </entity>
+    <entity name="DataCategory" representedClassName="DataCategory" syncable="YES">
+        <attribute name="categoryCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="categoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="categoryLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="term" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DataTerms" inverseName="categories" inverseEntity="DataTerms" syncable="YES"/>
+    </entity>
+    <entity name="DataFeaturedImage" representedClassName="DataFeaturedImage" syncable="YES">
+        <attribute name="imageHeight" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageTitl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageWidth" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DataPost" inverseName="featuredImage" inverseEntity="DataPost" syncable="YES"/>
+    </entity>
+    <entity name="DataImage" representedClassName="DataImage" parentEntity="DataObject" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DataObject" isAbstract="YES" syncable="YES"/>
+    <entity name="DataPost" representedClassName="DataPost" parentEntity="DataObject" syncable="YES">
+        <attribute name="postContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="postDateModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="postExcerpt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="postLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="DataAuthor" inverseName="post" inverseEntity="DataAuthor" syncable="YES"/>
+        <relationship name="featuredImage" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="DataFeaturedImage" inverseName="post" inverseEntity="DataFeaturedImage" syncable="YES"/>
+        <relationship name="term" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="DataTerms" inverseName="post" inverseEntity="DataTerms" syncable="YES"/>
+    </entity>
+    <entity name="DataPostTag" representedClassName="DataPostTag" parentEntity="DataObject" syncable="YES">
+        <attribute name="postTagCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="postTagId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="postTagLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postTagName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="term" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DataTerms" inverseName="postTags" inverseEntity="DataTerms" syncable="YES"/>
+    </entity>
+    <entity name="DataTerms" representedClassName="DataTerms" syncable="YES">
+        <attribute name="termsId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DataCategory" inverseName="term" inverseEntity="DataCategory" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DataPost" inverseName="term" inverseEntity="DataPost" syncable="YES"/>
+        <relationship name="postTags" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DataPostTag" inverseName="term" inverseEntity="DataPostTag" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DataAuthor" positionX="115" positionY="-396" width="119" height="148"/>
+        <element name="DataCategory" positionX="124" positionY="-19" width="128" height="133"/>
+        <element name="DataFeaturedImage" positionX="-56" positionY="-414" width="128" height="133"/>
+        <element name="DataImage" positionX="-621" positionY="-0" width="128" height="73"/>
+        <element name="DataObject" positionX="-623" positionY="-178" width="128" height="43"/>
+        <element name="DataPost" positionX="-380" positionY="-409" width="128" height="193"/>
+        <element name="DataPostTag" positionX="-351" positionY="-18" width="128" height="118"/>
+        <element name="DataTerms" positionX="-128" positionY="-189" width="128" height="103"/>
+    </elements>
+</model>
